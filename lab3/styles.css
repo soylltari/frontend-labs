@@ -1,3 +1,80 @@
+/* Base styles */
+
 body {
-  background-color: aqua;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 5rem;
+  width: 70%;
+  height: 40%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container-float,
+.container-flex {
+  width: 50%;
+  height: 100%;
+}
+
+.blue-text {
+  background-color: #70a7deff;
+  height: 20%;
+}
+
+.green-img {
+  background-color: #bbe58cff;
+  height: 50%;
+}
+
+.green-text {
+  background-color: #92af71ff;
+  height: 50%;
+}
+
+.pink-img {
+  background-color: #fac0f5ff;
+  height: 30%;
+}
+
+/* Float */
+
+.container-float .blue-text {
+  width: 100%;
+}
+.container-float .green-img {
+  float: left;
+  width: 70%;
+}
+.container-float .green-text {
+  float: right;
+  width: 30%;
+}
+.container-float .pink-img {
+  float: inline-end;
+  width: 100%;
+}
+
+/* Flex */
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-middle {
+  display: flex;
+  flex: 1;
+}
+
+.container-middle .green-img {
+  flex: 2;
+  height: 100%;
+}
+.container-middle .green-text {
+  flex: 1;
+  height: 100%;
 }
