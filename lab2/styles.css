@@ -1,0 +1,96 @@
+/* Base styles */
+
+.container {
+  display: flex;
+  gap: 5rem;
+  margin-top: 2rem;
+}
+
+.clock {
+  width: 150px;
+  height: 150px;
+  background-color: lavender;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+.arrow {
+  width: 4px;
+  height: 70px;
+  background-color: black;
+}
+
+.arrow2 {
+  height: 4px;
+  width: 70px;
+}
+
+/* Position */
+
+.position .clock {
+  position: relative;
+}
+
+.position .circle:nth-child(1) {
+  position: absolute;
+  top: 5%;
+  left: 45%;
+}
+.position .circle:nth-child(2) {
+  position: absolute;
+  right: 5%;
+  top: 45%;
+}
+.position .circle:nth-child(3) {
+  position: absolute;
+  bottom: 5%;
+  left: 45%;
+}
+.position .circle:nth-child(4) {
+  position: absolute;
+  left: 5%;
+  top: 45%;
+}
+
+.position .arrow {
+  position: absolute;
+}
+
+.position .arrow1 {
+  top: 10%;
+  left: 50%;
+}
+.position .arrow2 {
+  top: 50%;
+  left: 45%;
+}
+
+/* Transform */
+
+.transform .circle:nth-child(1) {
+  transform: translate(70px, 10px);
+}
+.transform .circle:nth-child(2) {
+  transform: translate(125px, 50px);
+}
+.transform .circle:nth-child(3) {
+  transform: translate(70px, 90px);
+}
+.transform .circle:nth-child(4) {
+  transform: translate(10px, 15px);
+}
+
+.transform .arrow1 {
+  transform: translate(77px, -55px);
+}
+.transform .arrow2 {
+  transform: translate(67px, -67px);
+}
