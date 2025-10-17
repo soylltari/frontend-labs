@@ -1,3 +1,28 @@
 body {
-  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#fetch-btn {
+  margin: 1rem;
+}
+
+.card {
+  background-color: rgb(98, 95, 112);
+  color: white;
+  width: 256px;
+  height: 445px;
+}
+
+img {
+  width: 256px;
+  height: 256px;
+}
+
+.info {
+  padding: 0.5rem;
+  white-space: normal;
+  word-break: break-all;
 }
