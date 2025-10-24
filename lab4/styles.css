@@ -1,3 +1,20 @@
-body {
-  background-color: aqua;
+.style1 {
+  background: blueviolet;
+  color: white;
+}
+
+.style2 {
+  background: yellow;
+  color: lime;
+}
+
+.container {
+  width: 1000px;
+  height: 443px;
+  overflow: hidden;
+}
+
+.container img {
+  max-width: 100%;
+  height: 100%;
 }
