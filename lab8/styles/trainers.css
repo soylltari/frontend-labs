@@ -1,0 +1,51 @@
+trainers-articles {
+  display: flex;
+}
+
+.trainer-article {
+  position: relative;
+  width: 263px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.725rem;
+  padding: 1.5rem;
+  box-shadow: 0px 10px 20px 10px rgb(247, 247, 247);
+  transition: var(--transition);
+}
+
+.trainer-article:hover {
+  box-shadow: 0px 10px 30px rgba(0, 35, 71, 0.192);
+}
+
+.trainer-article img {
+  margin-top: -2rem;
+}
+
+.position {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+.description {
+  margin: 1rem 0;
+}
+
+.socials {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socials:hover {
+  cursor: pointer;
+}
+
+.socials img {
+  width: 16px;
+}

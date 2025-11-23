@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --primary-clr: #002347;
+  --white-clr: #f9f9ff;
+  --accent-clr: #fdc632;
+  --font-roboto: "Roboto", sans-serif;
+  --font-rubik: "Rubik", sans-serif;
+  --layout-padding: 10rem;
+  --shadow: 0px 10px 30px rgba(0, 35, 71, 0.1);
+  --transition: all 0.5s ease;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-rubik);
+  color: var(--primary-clr);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+
+h1,
+h3 {
+  text-transform: uppercase;
+  font-family: var(--font-roboto);
+}
+
+p {
+  color: #7b838a;
+  font-family: var(--font-roboto);
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--font-rubik);
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4.5rem var(--layout-padding);
+  min-height: 15rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+.articles-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.main-link {
+  background-color: var(--accent-clr);
+  color: var(--primary-clr);
+  transition: var(--transition);
+}
+
+.main-link:hover {
+  background-color: var(--primary-clr);
+  color: var(--accent-clr);
+}

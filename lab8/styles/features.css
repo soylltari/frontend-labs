@@ -1,0 +1,19 @@
+.feature {
+  gap: 5rem;
+}
+
+.feature-article {
+  background-color: var(--white-clr);
+  transition: var(--transition);
+  padding: 1.5rem;
+}
+
+.feature-article:hover {
+  box-shadow: var(--shadow);
+}
+
+.feature-article img {
+  height: 48px;
+  width: 48px;
+  margin-bottom: 0.5rem;
+}

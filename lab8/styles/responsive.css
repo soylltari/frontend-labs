@@ -1,0 +1,154 @@
+@media screen and (max-width: 1024px) {
+  :root {
+    --layout-padding: 3rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --layout-padding: 1.5rem;
+  }
+
+  /* Header */
+  nav {
+    height: 60px;
+  }
+
+  .nav-right {
+    width: auto;
+    gap: 1.5rem;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-clr);
+    z-index: 10;
+    padding: 1rem 0;
+  }
+
+  .nav-links li a {
+    color: var(--white-clr);
+    padding: 0.5rem 1.5rem;
+    display: block;
+  }
+
+  .nav-links li:hover a {
+    color: var(--accent-clr);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  header {
+    min-height: auto;
+  }
+
+  .hero {
+    padding: 4rem 3rem;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  /* Global */
+  section {
+    padding: 2rem var(--layout-padding);
+  }
+
+  .articles-container {
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .title-group {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  /* Courses */
+  .courses-article {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* Form */
+  .form {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .form-title.title-group {
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .form-left,
+  form {
+    width: 100%;
+  }
+
+  .time {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .time-block {
+    min-width: 150px;
+    padding: 1.25rem;
+  }
+
+  /* Trainers*/
+
+  .trainers .articles-container {
+    justify-content: center;
+  }
+
+  .trainer-article {
+    width: 100%;
+    max-width: 263px;
+  }
+
+  /* Event */
+
+  .background {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .info {
+    width: 220px;
+  }
+
+  .event-link {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding: 1rem 2rem;
+  }
+}
